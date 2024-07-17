@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Fitness</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="topbar">
+            <img src="images/logo.png" alt="Logo Fitness Maru" class="logo">
+            <h1>Bienvenidos a Vita-FIT</h1>
+        </div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="#inicio" data-section="inicio" class="active">Inicio</a></li>
+                <li><a href="#quienes-somos" data-section="quienes-somos">Quiénes Somos</a></li>
+                <li id="registro-item"><a href="#registro" data-section="registro">Registro</a></li>
+                <li id="login-item"><a href="#login" data-section="login">Iniciar Sesión</a></li>
+                <li id="objetivo-item" style="display:none;"><a href="#objetivo" data-section="objetivo">Objetivo</a></li>
+                <li id="calculadora-item" style="display:none;"><a href="#calculadora" data-section="calculadora">Calculadora de Calorías</a></li>
+                <li id="alimentos-item" style="display:none;"><a href="#alimentos" data-section="alimentos">Calorías de Alimentos</a></li>
+                <li id="logout-item" style="display:none;"><a href="#" id="logout">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="active">
+        <h2>Inicio</h2>
+        <div class="inicio-container">
+            <img src="images/ejer1.jpg" alt="Imagen de inicio" class="inicio-img">
+            <div class="inicio-text">
+                <p class="text-highlight animate-fade-in">BIENESTAR INTELIGENTE RESULTADOS REALES</p>
+                <p class="text-highlight animate-fade-in quote">En busca de un mejor estilo de vida y tu superación personal
+                    Confía en que puedes, así ya estarás a mitad de camino. "Theodore Roosevelt"</p>
+            </div>
+        </div>
+        <div class="servicios-titulo">
+            <h1>SERVICIOS</h1>
+            <hr>
+            <p>Disfruta de lo que ofrecemos para ti</p>
+        </div>
+
+        <div class="servicios">
+            <div class="servicio">
+                <div class="servicio-img-wrapper">
+                    <img src="images/calculadora_calorias.jpg" alt="Calculadora de Calorías">
+                </div>
+                <h3>Calculadora de Calorías</h3>
+                <p>Este servicio permite a los usuarios calcular la cantidad de energía (calorías) que recibirían al consumir diferentes alimentos. 
+                    Consulta la cantidad de energía que podría recibir tu cuerpo al consumir determinado alimento.</p>
+            </div>
+            <div class="servicio">
+                <div class="servicio-img-wrapper">
+                    <img src="images/rutinas_dietas.jpg" alt="Rutinas y Dietas">
+                </div>
+                <h3>Rutinas y Dietas</h3>
+                <p>Este servicio sugiere rutinas de ejercicio personalizadas según los objetivos del usuario, ya sea perder peso, ganar músculo, o mantener la forma física.</p>
+            </div>
+            <div class="servicio">
+                <div class="servicio-img-wrapper">
+                    <img src="images/calculadora_alimentos.jpg" alt="Calculadora de Alimentos">
+                </div>
+                <h3>Calculadora de Alimentos</h3>
+                <p>Esta herramienta permite a los usuarios seleccionar alimentos específicos y calcular su contenido calórico , es similar a la calculadora de calorías, pero con un enfoque más en el detalle nutricional de cada alimento.</p>
+            </div>
+        </div>
+        <div class="contact-info">
+            <hr>
+            <p>--- Más información ---</p>
+            <p>Dirección: Chile y Diego de Almagro</p>
+            <p>Teléfono: 0987378048</p>
+            <p>Email: vita_fit@gmail.com</p>
+        </div>
+        <div class="sugerencias">
+            <h3>Deja tus sugerencias</h3>
+            <form id="form-sugerencias">
+                <label for="nombre-sugerencia">Nombre:</label>
+                <input type="text" id="nombre-sugerencia" name="nombre" required>
+                <label for="sugerencia">Sugerencia:</label>
+                <textarea id="sugerencia" name="sugerencia" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="confirmacion-sugerencia" class="sugerencia-confirmacion"></div>
+            <div id="sugerencias-lista">
+            </div>
+        </div>
+    </section>
+
+    <section id="quienes-somos">
+        <h2 class="text-highlight">Misión</h2>
+        <p class="text-highlight">Somos una empresa emergente en el área de fitness y tecnología que busca brindar las herramientas para calcular la cantidad de calorías ingeridas y brindar de estar manera una asesoría técnica en rutinas físicas.
+        </p>
+        <h2 class="text-highlight">Visión</h2>
+        <p class="text-highlight">Ser una empresa fitness y tecnológica reconocida a nivel local por nuestra excelencia e innovación aspiramos contar con una serie de colaboradores para llevar nuestro producto a un nivel nacional.</p>
+        <img src="images/logof.jpg" alt="Logotipo de la empresa" class="logo-pequeno">
+        <div class="contact-info">
+            <hr>
+            <p>--- Más información ---</p>
+            <p>Dirección: Chile y Diego de Almagro</p>
+            <p>Teléfono: 0987378048</p>
+            <p>Email: vita_fit@gmail.com</p>
+        </div>
+        <div class="sugerencias">
+            <h3>Deja tus sugerencias</h3>
+            <form id="form-sugerencias">
+                <label for="nombre-sugerencia">Nombre:</label>
+                <input type="text" id="nombre-sugerencia" name="nombre" required>
+                <label for="sugerencia">Sugerencia:</label>
+                <textarea id="sugerencia" name="sugerencia" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="confirmacion-sugerencia" class="sugerencia-confirmacion"></div>
+            <div id="sugerencias-lista">
+            </div>
+        </div>
+    </section>
+
+    <section id="registro">
+        <h2 class="text-highlight">Registro</h2>
+        <div class="form-container">
+            <form id="form-registro">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <label for="peso">Peso (kg):</label>
+                <input type="number" id="peso" name="peso" required>
+                
+                <label for="altura">Altura (cm):</label>
+                <input type="number" id="altura" name="altura" required>
+                
+                <label for="objetivo">Objetivo:</label>
+                <select id="objetivo" name="objetivo" required>
+                    <option value="subir">Subir de peso</option>
+                    <option value="bajar">Bajar de peso</option>
+                    <option value="mantener">Mantener peso</option>
+                </select>
+                
+                <button type="submit">Registrarse</button>
+                <div id="registro-error" style="color: red;"></div>
+            </form>
+        </div>
+        <div class="contact-info">
+            <hr>
+            <p>--- Más información ---</p>
+            <p>Dirección: Chile y Diego de Almagro</p>
+            <p>Teléfono: 0987378048</p>
+            <p>Email: vita_fit@gmail.com</p>
+        </div>
+        <div class="sugerencias">
+            <h3>Deja tus sugerencias</h3>
+            <form id="form-sugerencias">
+                <label for="nombre-sugerencia">Nombre:</label>
+                <input type="text" id="nombre-sugerencia" name="nombre" required>
+                <label for="sugerencia">Sugerencia:</label>
+                <textarea id="sugerencia" name="sugerencia" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="confirmacion-sugerencia" class="sugerencia-confirmacion"></div>
+            <div id="sugerencias-lista">
+            </div>
+        </div>
+    </section>
+
+    <section id="login">
+        <h2 class="text-highlight">Dirigido para usuarios de</h2>
+        <img src="images/power_life.jpg" alt="Logotipo de la empresa" class="logo-pequeno">
+        <h2 class="text-highlight">Iniciar Sesión</h2>
+        <div class="form-container">
+            <form id="form-login">
+                <label for="email-login">Email:</label>
+                <input type="email" id="email-login" name="email" required>
+                
+                <label for="password-login">Contraseña:</label>
+                <input type="password" id="password-login" name="password" required>
+                
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <hr>
+            <p>--- Más información ---</p>
+            <p>Dirección: Chile y Diego de Almagro</p>
+            <p>Teléfono: 0987378048</p>
+            <p>Email: vita_fit@gmail.com</p>
+        </div>
+        <div class="sugerencias">
+            <h3>Deja tus sugerencias</h3>
+            <form id="form-sugerencias">
+                <label for="nombre-sugerencia">Nombre:</label>
+                <input type="text" id="nombre-sugerencia" name="nombre" required>
+                <label for="sugerencia">Sugerencia:</label>
+                <textarea id="sugerencia" name="sugerencia" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="confirmacion-sugerencia" class="sugerencia-confirmacion"></div>
+            <div id="sugerencias-lista">
+            </div>
+        </div>
+    </section>
+
+    <section id="objetivo">
+        <h2 class="text-highlight">Objetivo</h2>
+        <div id="contenido-objetivo">Cargando...</div>
+        <div class="contact-info">
+            <hr>
+            <p>--- Más información ---</p>
+            <p>Dirección: Chile y Diego de Almagro</p>
+            <p>Teléfono: 0987378048</p>
+            <p>Email: vita_fit@gmail.com</p>
+        </div>
+        <div class="sugerencias">
+            <h3>Deja tus sugerencias</h3>
+            <form id="form-sugerencias">
+                <label for="nombre-sugerencia">Nombre:</label>
+                <input type="text" id="nombre-sugerencia" name="nombre" required>
+                <label for="sugerencia">Sugerencia:</label>
+                <textarea id="sugerencia" name="sugerencia" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="confirmacion-sugerencia" class="sugerencia-confirmacion"></div>
+            <div id="sugerencias-lista">
+            </div>
+        </div>
+    </section>
+
+    <section id="calculadora">
+        <h2 class="text-highlight">Calculadora de Calorías</h2>
+        <form id="form-calculadora">
+            <label for="peso-calc">Peso (kg):</label>
+            <input type="number" id="peso-calc" name="peso" required>
+            
+            <label for="altura-calc">Altura (cm):</label>
+            <input type="number" id="altura-calc" name="altura" required>
+            
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required>
+            
+            <label for="genero">Género:</label>
+            <select id="genero" name="genero" required>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+            </select>
+            
+            <button type="submit">Calcular Calorías</button>
+        </form>
+        <div id="resultado-calculadora"></div>
+        <div class="contact-info">
+            <hr>
+            <p>--- Más información ---</p>
+            <p>Dirección: Chile y Diego de Almagro</p>
+            <p>Teléfono: 0987378048</p>
+            <p>Email: vita_fit@gmail.com</p>
+        </div>
+        <div class="sugerencias">
+            <h3>Deja tus sugerencias</h3>
+            <form id="form-sugerencias">
+                <label for="nombre-sugerencia">Nombre:</label>
+                <input type="text" id="nombre-sugerencia" name="nombre" required>
+                <label for="sugerencia">Sugerencia:</label>
+                <textarea id="sugerencia" name="sugerencia" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="confirmacion-sugerencia" class="sugerencia-confirmacion"></div>
+            <div id="sugerencias-lista">
+            </div>
+        </div>
+    </section>
+
+    <section id="alimentos">
+        <h2 class="text-highlight">Calorías de Alimentos</h2>
+        <div class="search-container">
+            <input type="text" id="buscar-alimento" placeholder="Buscar alimento..." class="search-input">
+            <button id="buscar-btn" class="search-btn">Buscar</button>
+        </div>
+        <div id="resultado-alimentos" class="result-container"></div>
+        <div class="contact-info">
+            <hr>
+            <p>--- Más información ---</p>
+            <p>Dirección: Chile y Diego de Almagro</p>
+            <p>Teléfono: 0987378048</p>
+            <p>Email: vita_fit@gmail.com</p>
+        </div>
+        <div class="sugerencias">
+            <h3>Deja tus sugerencias</h3>
+            <form id="form-sugerencias">
+                <label for="nombre-sugerencia">Nombre:</label>
+                <input type="text" id="nombre-sugerencia" name="nombre" required>
+                <label for="sugerencia">Sugerencia:</label>
+                <textarea id="sugerencia" name="sugerencia" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="confirmacion-sugerencia" class="sugerencia-confirmacion"></div>
+            <div id="sugerencias-lista">
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
